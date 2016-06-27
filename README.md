@@ -20,12 +20,6 @@ Added texture filtering options for ProQuake Engine via prompt menu
  
 Other options include ability to set cpu speed and heapsize for memory allocation.
 I recommend using CPU Speed: 333 and Heapsize: 38 for the PSP Slim, and for the PS Vita/PSP Phat to use CPU Speed: 333 and Heapsize: 16
- 
-======DOWNLOAD======
- 
-Included in the archive are the respective game folder, eboot, and source code.
-PSP SLIM 64MB VERSION [REV2]: [url]https://www.dropbox.com/s/kpvaia5abwz1mcl/Insomnia%20ProQuake%20471%20Rev2.rar?dl=0[/url]
-PSP PHAT 32MB VERSION [INITIAL RELEASE](EBOOT ONLY): [url]https://www.dropbox.com/s/r155cd0a2nyxzt0/Insomnia_PSP100X%20PHAT%20EBOOT.rar?dl=0[/url]
 
 ======INSTALLATION======
  
@@ -45,23 +39,12 @@ PSPMEMSTICK:\PSP\Game\Insomnia\ID1\PAK1.PAK
  
 Refer to included "Insomnia Proquake_471_readme.txt" for more information
 
-=====PLANNED FEATURES=====
-
-Hipnotic mode switch on prompt menu (already functioning in unreleased Dev version)
-
-More control switch options/binding settings in menu
-
-Suggestions? Leave a comment!
  
 =====REFERENCE FOR CODERS/Developers=====
-If you wish to compile the source yourself, I recommend using CYGWIN as well as this mirror of an older iteration of the psptoolchain [url=http://psp.jim.sh/svn/psp/trunk/psptoolchain/]psptoolchain - Revision 2494[/url] 
+If you wish to compile the source yourself, I recommend using CYGWIN as well as this mirror of an older iteration of the psptoolchain ttp://psp.jim.sh/svn/psp/trunk/psptoolchain/]psptoolchain - Revision 2494
 Please feel free to reach out to me if you would like a precompiled environment with the required version of the psptoolchain
 
-SOURCE CODE: [url="https://www.dropbox.com/s/3nc6i0jv46vb1iw/SOURCE%20Insomnia%20Proquake%20471%20Rev2.rar?dl=0"]Insomnia ProQuake 4.71 Revision 2 Source Code[/url]
-
 =====================CHANGELOG===================
-
-[code]
 June 25, 2016 - Revision 2
 -------------
 
@@ -76,3 +59,24 @@ Added Crosshair Enable/Disable Option under OPTIONS > SUBMENU MISC OPTIONS
 Added Autoaim Enable/Disable Option under OPTIONS > SUBMENU MISC OPTIONS
 
 Fixed mp3/audio issues on startup and when returning from standby mode
+
+***KNOWN BUGS***
+If Dynamic Lighting is disabled, certain models and objects will continue to be
+affected by dynamic lighting (weapons/character models)
+
+
+June 21, 2016 - Revision 1
+-------------
+
+Bug fixes and more optimization
+Corrected heap/cpu speed paramater bugs
+Corrected mp3 directory
+Set cl_autoaim 0 in compile and config.cfg
+
+
+June 19, 2016 - Initial Release
+-------------
+
+Added -prompt functionality including setting cpu speed, heapsize and mod folder
+Mod compilation of user generated mods that function on PSP
+Optimized for PSP Slim 64mb version. Will not function as stands for PSP 1000 models
