@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/kurok/SVN/!svn/ver/3/psp/dist
+END
+gpl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/kurok/SVN/!svn/ver/1/psp/dist/gpl.txt
+END
+readme.html
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/kurok/SVN/!svn/ver/1/psp/dist/readme.html
+END
+old_readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/kurok/SVN/!svn/ver/1/psp/dist/old_readme.txt
+END

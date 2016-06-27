@@ -1,0 +1,383 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/kurok/SVN/!svn/ver/11/psp
+END
+math.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/kurok/SVN/!svn/ver/1/psp/math.hpp
+END
+input.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/kurok/SVN/!svn/ver/10/psp/input.cpp
+END
+Cygwin_slim_eboot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/kurok/SVN/!svn/ver/1/psp/Cygwin_slim_eboot.bat
+END
+vram.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/kurok/SVN/!svn/ver/10/psp/vram.cpp
+END
+clipping.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/kurok/SVN/!svn/ver/1/psp/clipping.cpp
+END
+Quake_PSP.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/kurok/SVN/!svn/ver/1/psp/Quake_PSP.vcproj
+END
+battery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/kurok/SVN/!svn/ver/1/psp/battery.cpp
+END
+mcount.S
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/kurok/SVN/!svn/ver/1/psp/mcount.S
+END
+cd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/kurok/SVN/!svn/ver/10/psp/cd.cpp
+END
+video_hardware.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/kurok/SVN/!svn/ver/10/psp/video_hardware.h
+END
+Cygwin_normal_make.bat
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/kurok/SVN/!svn/ver/1/psp/Cygwin_normal_make.bat
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/kurok/SVN/!svn/ver/10/psp/Makefile
+END
+lightmaps.h
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/kurok/SVN/!svn/ver/11/psp/lightmaps.h
+END
+mp3.c
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/kurok/SVN/!svn/ver/10/psp/mp3.c
+END
+mp3.h
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/kurok/SVN/!svn/ver/1/psp/mp3.h
+END
+Cygwin_slim_make.bat
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/kurok/SVN/!svn/ver/1/psp/Cygwin_slim_make.bat
+END
+prof.c
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/kurok/SVN/!svn/ver/1/psp/prof.c
+END
+video_hardware_model.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/kurok/SVN/!svn/ver/10/psp/video_hardware_model.h
+END
+video_hardware_light.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/kurok/SVN/!svn/ver/10/psp/video_hardware_light.cpp
+END
+network_psp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/kurok/SVN/!svn/ver/1/psp/network_psp.hpp
+END
+Cygwin_normal_install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/kurok/SVN/!svn/ver/1/psp/Cygwin_normal_install.bat
+END
+gethost.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/kurok/SVN/!svn/ver/1/psp/gethost.hpp
+END
+video_hardware.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/kurok/SVN/!svn/ver/10/psp/video_hardware.cpp
+END
+system.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/kurok/SVN/!svn/ver/10/psp/system.cpp
+END
+sound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/kurok/SVN/!svn/ver/1/psp/sound.cpp
+END
+network.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/kurok/SVN/!svn/ver/10/psp/network.cpp
+END
+math.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/kurok/SVN/!svn/ver/1/psp/math.cpp
+END
+module.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/kurok/SVN/!svn/ver/10/psp/module.h
+END
+PARAMslim.SFO
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/kurok/SVN/!svn/ver/1/psp/PARAMslim.SFO
+END
+video_hardware_misc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/kurok/SVN/!svn/ver/10/psp/video_hardware_misc.cpp
+END
+Cygwin_slim_install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/kurok/SVN/!svn/ver/1/psp/Cygwin_slim_install.bat
+END
+video_hardware_mesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/kurok/SVN/!svn/ver/8/psp/video_hardware_mesh.cpp
+END
+video_hardware_entity_fragment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/kurok/SVN/!svn/ver/1/psp/video_hardware_entity_fragment.cpp
+END
+video_hardware_model.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/kurok/SVN/!svn/ver/10/psp/video_hardware_model.cpp
+END
+PARAM.SFO
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/kurok/SVN/!svn/ver/1/psp/PARAM.SFO
+END
+cdmad.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/kurok/SVN/!svn/ver/1/psp/cdmad.cpp
+END
+vram.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/kurok/SVN/!svn/ver/1/psp/vram.hpp
+END
+clipping.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/kurok/SVN/!svn/ver/1/psp/clipping.hpp
+END
+pspDveManager.S
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/kurok/SVN/!svn/ver/1/psp/pspDveManager.S
+END
+video_hardware_fog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/kurok/SVN/!svn/ver/10/psp/video_hardware_fog.cpp
+END
+battery.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/kurok/SVN/!svn/ver/1/psp/battery.hpp
+END
+fnmatch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/kurok/SVN/!svn/ver/1/psp/fnmatch.cpp
+END
+video_hardware_screen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/kurok/SVN/!svn/ver/10/psp/video_hardware_screen.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/kurok/SVN/!svn/ver/10/psp/main.cpp
+END
+module.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/kurok/SVN/!svn/ver/10/psp/module.cpp
+END
+video_hardware_surface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/kurok/SVN/!svn/ver/10/psp/video_hardware_surface.cpp
+END
+Cygwin_normal_clean.bat
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/kurok/SVN/!svn/ver/1/psp/Cygwin_normal_clean.bat
+END
+sed_make.sh
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/kurok/SVN/!svn/ver/1/psp/sed_make.sh
+END
+video_hardware_draw.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/kurok/SVN/!svn/ver/10/psp/video_hardware_draw.cpp
+END
+video_hardware_vertexlights.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/kurok/SVN/!svn/ver/1/psp/video_hardware_vertexlights.h
+END
+MakefileNormal
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/kurok/SVN/!svn/ver/10/psp/MakefileNormal
+END
+mad.h
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/kurok/SVN/!svn/ver/10/psp/mad.h
+END
+Cygwin_slim_clean.bat
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/kurok/SVN/!svn/ver/1/psp/Cygwin_slim_clean.bat
+END
+network_psp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/kurok/SVN/!svn/ver/10/psp/network_psp.cpp
+END
+video_hardware_warp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/kurok/SVN/!svn/ver/10/psp/video_hardware_warp.cpp
+END
+gethost.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/kurok/SVN/!svn/ver/1/psp/gethost.cpp
+END
+video_software.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/kurok/SVN/!svn/ver/1/psp/video_software.cpp
+END
+Cygwin_normal_eboot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/kurok/SVN/!svn/ver/1/psp/Cygwin_normal_eboot.bat
+END
+fnmatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/kurok/SVN/!svn/ver/1/psp/fnmatch.h
+END
+video_hardware_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/kurok/SVN/!svn/ver/10/psp/video_hardware_main.cpp
+END
+video_vertex_lighting.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/kurok/SVN/!svn/ver/10/psp/video_vertex_lighting.c
+END
+system.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/kurok/SVN/!svn/ver/1/psp/system.hpp
+END
+video_vertex_lighting.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/kurok/SVN/!svn/ver/10/psp/video_vertex_lighting.h
+END

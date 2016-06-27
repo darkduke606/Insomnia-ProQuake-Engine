@@ -1,0 +1,7 @@
+wqpro*.exe
+glpro*.exe
+d3dpro*.exe
+libcurl.dll
+zlib1.dll
+gnu.txt
+*.log

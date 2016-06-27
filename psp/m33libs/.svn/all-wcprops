@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/kurok/SVN/!svn/ver/1/psp/m33libs
+END
+kubridge.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/kurok/SVN/!svn/ver/1/psp/m33libs/kubridge.h
+END
+libpspkubridge.a
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/kurok/SVN/!svn/ver/1/psp/m33libs/libpspkubridge.a
+END
+libpspaudiocodec.a
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/kurok/SVN/!svn/ver/1/psp/m33libs/libpspaudiocodec.a
+END

@@ -1,0 +1,978 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: winquake - Win32 GL Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo".\release_gl/winquake.res" /d "NDEBUG" "C:\cygwin\home\user\proquake_dev\WinQuake\winquake.rc"" 
+Creating temporary file "C:\Users\Main\AppData\Local\Temp\RSPA0D0.tmp" with contents
+[
+/nologo /G5 /ML /W3 /GX /O2 /I ".\dxsdk\sdk7\include" /D "NDEBUG" /D "GLQUAKE" /D "WIN32" /D "_WINDOWS" /FR".\release_gl/" /Fp".\release_gl/WinQuake.pch" /YX /Fo".\release_gl/" /Fd".\release_gl/" /FD /c 
+"C:\cygwin\home\user\proquake_dev\WinQuake\cd_win.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\cl_chase.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\cl_input.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\cl_main.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\cl_parse.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\cl_sbar.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\cl_tent.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\cmd.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\common.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\conproc.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\console.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\crc.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\cvar.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_draw.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_fullbright.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_mesh.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_model.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_refrag.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_rlight.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_rmain.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_rmisc.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_rsurf.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_screen.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_test.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\gl_warp.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\host.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\host_cmd.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\in_win.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\iplog.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\keys.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\location.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\mathlib.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\matrix.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\menu.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\movie.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\movie_avi.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\net_dgrm.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\net_loop.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\net_main.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\net_vcr.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\net_win.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\net_wins.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\net_wipx.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\pr_cmds.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\pr_edict.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\pr_exec.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\qmp3.cpp"
+"C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\registry.cpp"
+"C:\cygwin\home\user\proquake_dev\WinQuake\security.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\snd_dma.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\snd_mem.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\snd_mix.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\snd_win.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\sv_main.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\sv_move.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\sv_phys.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\sv_user.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\sv_world.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\sys_win.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\version.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\vid_common_gl.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\vid_wgl.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\wad.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\webdownload.c"
+"C:\cygwin\home\user\proquake_dev\WinQuake\zone.c"
+]
+Creating command line "cl.exe @C:\Users\Main\AppData\Local\Temp\RSPA0D0.tmp" 
+Creating temporary file "C:\Users\Main\AppData\Local\Temp\RSPA0D1.tmp" with contents
+[
+advapi32.lib comctl32.lib dsound.lib dxguid.lib gdi32.lib libcurl.lib kernel32.lib ole32.lib oleaut32.lib opengl32.lib shell32.lib strmiids.lib user32.lib winmm.lib wsock32.lib /nologo /subsystem:windows /profile /map:".\release_gl/glpro466.map" /machine:I386 /out:"c:\quake1\glpro466.exe" 
+.\release_gl\cd_win.obj
+.\release_gl\cl_chase.obj
+.\release_gl\cl_demo.obj
+.\release_gl\cl_input.obj
+.\release_gl\cl_main.obj
+.\release_gl\cl_parse.obj
+.\release_gl\cl_sbar.obj
+.\release_gl\cl_tent.obj
+.\release_gl\cl_view.obj
+.\release_gl\cmd.obj
+.\release_gl\common.obj
+.\release_gl\conproc.obj
+.\release_gl\console.obj
+.\release_gl\crc.obj
+.\release_gl\cvar.obj
+.\release_gl\gl_draw.obj
+.\release_gl\gl_fullbright.obj
+.\release_gl\gl_mesh.obj
+.\release_gl\gl_model.obj
+.\release_gl\gl_refrag.obj
+.\release_gl\gl_rlight.obj
+.\release_gl\gl_rmain.obj
+.\release_gl\gl_rmisc.obj
+.\release_gl\gl_rsurf.obj
+.\release_gl\gl_screen.obj
+.\release_gl\gl_test.obj
+.\release_gl\gl_warp.obj
+.\release_gl\host.obj
+.\release_gl\host_cmd.obj
+.\release_gl\in_win.obj
+.\release_gl\iplog.obj
+.\release_gl\keys.obj
+.\release_gl\location.obj
+.\release_gl\mathlib.obj
+.\release_gl\matrix.obj
+.\release_gl\menu.obj
+.\release_gl\movie.obj
+.\release_gl\movie_avi.obj
+.\release_gl\net_dgrm.obj
+.\release_gl\net_loop.obj
+.\release_gl\net_main.obj
+.\release_gl\net_vcr.obj
+.\release_gl\net_win.obj
+.\release_gl\net_wins.obj
+.\release_gl\net_wipx.obj
+.\release_gl\pr_cmds.obj
+.\release_gl\pr_edict.obj
+.\release_gl\pr_exec.obj
+.\release_gl\qmp3.obj
+.\release_gl\r_part.obj
+.\release_gl\registry.obj
+.\release_gl\security.obj
+.\release_gl\snd_dma.obj
+.\release_gl\snd_mem.obj
+.\release_gl\snd_mix.obj
+.\release_gl\snd_win.obj
+.\release_gl\sv_main.obj
+.\release_gl\sv_move.obj
+.\release_gl\sv_phys.obj
+.\release_gl\sv_user.obj
+.\release_gl\sv_world.obj
+.\release_gl\sys_win.obj
+.\release_gl\version.obj
+.\release_gl\vid_common_gl.obj
+.\release_gl\vid_wgl.obj
+.\release_gl\wad.obj
+.\release_gl\webdownload.obj
+.\release_gl\zone.obj
+.\release_gl\winquake.res
+]
+Creating command line "link.exe @C:\Users\Main\AppData\Local\Temp\RSPA0D1.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+cd_win.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+cl_chase.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_chase.c(170) : error C2039: 'modelindex' : is not a member of 'entity_s'
+        C:\cygwin\home\user\proquake_dev\WinQuake\render.h(55) : see declaration of 'entity_s'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_chase.c(170) : error C2065: 'cl_modelindex' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_chase.c(170) : error C2065: 'mi_player' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_chase.c(170) : error C2109: subscript requires array or pointer type
+cl_demo.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(54) : warning C4047: 'function' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(54) : warning C4024: 'Sys_FileClose' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(56) : warning C4047: '=' : 'struct _iobuf *' differs in levels of indirection from 'const int '
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(80) : warning C4047: 'function' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(80) : warning C4024: 'Sys_FileWrite' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(84) : warning C4047: 'function' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(84) : warning C4024: 'Sys_FileWrite' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(86) : warning C4047: 'function' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(86) : warning C4024: 'Sys_FileWrite' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(126) : warning C4047: 'function' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(126) : warning C4024: 'Sys_FileRead' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(130) : warning C4047: 'function' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(130) : warning C4024: 'Sys_FileRead' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(137) : warning C4047: 'function' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(137) : warning C4024: 'Sys_FileRead' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(192) : warning C4047: 'function' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(192) : warning C4024: 'Sys_FileClose' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(193) : warning C4047: '=' : 'struct _iobuf *' differs in levels of indirection from 'const int '
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(255) : warning C4047: '=' : 'struct _iobuf *' differs in levels of indirection from 'int '
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(264) : warning C4047: 'function' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(264) : warning C4024: 'Sys_FileWrite' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(312) : warning C4047: 'function' : 'int *' differs in levels of indirection from 'struct _iobuf ** '
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(312) : warning C4024: 'COM_FOpenFile' : different types for formal and actual parameter 2
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(324) : warning C4047: 'function' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_demo.c(324) : warning C4024: 'CL_FileGetChar' : different types for formal and actual parameter 1
+cl_input.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_input.c(164) : error C2065: 'lookcenter' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_input.c(164) : error C2224: left of '.value' must have struct/union type
+cl_main.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_main.c(107) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_main.c(107) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_main.c(107) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_main.c(108) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_main.c(108) : error C2466: cannot allocate an array of constant size 0
+cl_parse.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_parse.c(559) : error C2065: 'skin' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_parse.c(1432) : error C2065: 'bgmtype' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_parse.c(1432) : error C2224: left of '.string' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_parse.c(1432) : error C2198: 'strcmpi' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_parse.c(1471) : warning C4013: 'Sky_LoadSkyBox' undefined; assuming extern returning int
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_parse.c(1475) : warning C4013: 'Fog_ParseServerMessage' undefined; assuming extern returning int
+cl_sbar.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_sbar.c(730) : error C2065: 'kurok' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_sbar.c(1357) : warning C4013: 'Sbar_DrawNum2' undefined; assuming extern returning int
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_sbar.c(1391) : error C2065: 'KIT_UZI' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_sbar.c(1399) : error C2065: 'KIT_M99' : undeclared identifier
+cl_tent.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+cl_view.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(268) : error C2065: 'lookcenter' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(268) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(936) : error C2143: syntax error : missing ';' before 'type'
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(938) : error C2065: 'kurok' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(938) : error C2065: 'scr_fov' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(938) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(941) : error C2065: 'in_disable_analog' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(941) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(943) : error C2065: 'in_freelook_analog' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(943) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(946) : error C2065: 'pad' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(946) : error C2224: left of '.Ly' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(946) : error C2065: 'in_y_axis_adjust' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(946) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(948) : error C2224: left of '.Ly' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(948) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(949) : error C2224: left of '.Lx' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(949) : error C2065: 'in_x_axis_adjust' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(949) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(953) : error C2065: 'in_analog_strafe' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(953) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(954) : error C2224: left of '.Lx' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(954) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(958) : error C2065: 'cl_gunpitch' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(958) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(959) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(1101) : error C2065: 'bobside' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\cl_view.c(1106) : warning C4013: 'V_CalcBobSide' undefined; assuming extern returning int
+cmd.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+common.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\common.c(1939) : warning C4013: 'assert' undefined; assuming extern returning int
+conproc.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+console.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+crc.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+cvar.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+gl_draw.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+gl_fullbright.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+gl_mesh.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+gl_model.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+gl_refrag.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+gl_rlight.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+gl_rmain.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_rmain.c(1770) : warning C4013: 'asinf' undefined; assuming extern returning int
+gl_rmisc.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+gl_rsurf.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+gl_screen.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_screen.c(833) : error C2039: 'modelindex' : is not a member of 'entity_s'
+        C:\cygwin\home\user\proquake_dev\WinQuake\render.h(55) : see declaration of 'entity_s'
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_screen.c(833) : error C2065: 'cl_modelindex' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_screen.c(833) : error C2065: 'mi_player' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_screen.c(833) : error C2109: subscript requires array or pointer type
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_screen.c(836) : warning C4013: 'ISDEAD' undefined; assuming extern returning int
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_screen.c(1330) : warning C4013: 'SCR_DrawCoords' undefined; assuming extern returning int
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_screen.c(1365) : warning C4013: 'V_UpdatePalette_Hardware' undefined; assuming extern returning int
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_screen.c(1366) : warning C4013: 'V_UpdatePalette_Static' undefined; assuming extern returning int
+gl_test.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+gl_warp.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_warp.c(404) : warning C4047: 'function' : 'int *' differs in levels of indirection from 'struct _iobuf ** '
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_warp.c(404) : warning C4024: 'COM_FOpenFile' : different types for formal and actual parameter 2
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_warp.c(536) : warning C4047: 'function' : 'int *' differs in levels of indirection from 'struct _iobuf ** '
+C:\cygwin\home\user\proquake_dev\WinQuake\gl_warp.c(536) : warning C4024: 'COM_FOpenFile' : different types for formal and actual parameter 2
+host.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+host_cmd.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\host_cmd.c(2309) : warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void )'
+C:\cygwin\home\user\proquake_dev\WinQuake\host_cmd.c(2310) : warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void )'
+in_win.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\in_win.c(1138) : error C2065: 'pq_fullpitch' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\in_win.c(1138) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\in_win.c(1601) : error C2224: left of '.value' must have struct/union type
+iplog.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+keys.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\keys.c(781) : warning C4029: declared formal parameter list different from definition
+C:\cygwin\home\user\proquake_dev\WinQuake\keys.c(861) : error C2198: 'M_Keydown' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\keys.c(949) : error C2198: 'M_Keydown' : too few actual parameters
+location.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\location.c(44) : warning C4047: 'function' : 'int *' differs in levels of indirection from 'struct _iobuf ** '
+C:\cygwin\home\user\proquake_dev\WinQuake\location.c(44) : warning C4024: 'COM_FOpenFile' : different types for formal and actual parameter 2
+mathlib.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+matrix.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+menu.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(395) : error C2065: 'kurok' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(606) : error C2065: 'items_respawn' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(607) : error C2065: 'weapons_stay' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(608) : error C2065: 'pistols' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(609) : error C2065: 'automatics' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(610) : error C2065: 'shotguns' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(611) : error C2065: 'explosives' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(612) : error C2065: 'snipers' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(613) : error C2065: 'exit_non_fatal' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(614) : error C2065: 'infinite_ammo' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(615) : error C2065: 'all_weapons' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(616) : error C2065: 'no_reload' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(617) : error C2065: 'no_armor' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(618) : error C2065: 'no_health' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(619) : error C2065: 'armor_regen' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(620) : error C2065: 'health_regen' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(621) : error C2065: 'safe_spawn' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(622) : error C2065: 'no_bots' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(909) : error C2065: 'tcpipAdhoc' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1750) : error C2065: 'in_tolerance' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1750) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1751) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1752) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1753) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1754) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1755) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1755) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1755) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1759) : error C2065: 'in_acceleration' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1759) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1760) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1761) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1762) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1763) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1764) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1764) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1764) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1768) : error C2065: 'in_x_axis_adjust' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1768) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1769) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1770) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1771) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1772) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1773) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1773) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1773) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1777) : error C2065: 'in_y_axis_adjust' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1777) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1778) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1779) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1780) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1781) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1782) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1782) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1782) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1790) : error C2065: 'in_disable_analog' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1790) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1790) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1790) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1793) : error C2065: 'OPT_AUTOCENTER' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1793) : error C2051: case expression not constant
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1794) : error C2065: 'lookcenter' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1794) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1794) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1794) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1797) : error C2065: 'OPT_MOUSESTRAFE' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1797) : error C2051: case expression not constant
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1798) : error C2065: 'in_analog_strafe' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1798) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1798) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1798) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1802) : error C2065: 'in_freelook_analog' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1802) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1802) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1802) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1848) : error C2065: 'OPT_MAXFPS' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1848) : error C2051: case expression not constant
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1849) : error C2065: 'pq_maxfps' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1849) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1850) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1851) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1852) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1853) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1854) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1854) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1854) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1858) : error C2065: 'r_vsync' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1858) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1858) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1858) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1861) : error C2065: 'OPT_MODEL_BRIGHTNESS' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1861) : error C2051: case expression not constant
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1862) : error C2065: 'r_model_brightness' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1862) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct cvar_s *'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1862) : error C2224: left of '.value' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1862) : error C2198: 'Cvar_SetValueByRef' : too few actual parameters
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1865) : error C2065: 'OPT_FPS' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1865) : error C2051: case expression not constant
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1869) : error C2065: 'OPT_DYNAMIC' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1869) : error C2051: case expression not constant
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1945) : error C2065: 'OPT_FOG_START' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1945) : error C2051: case expression not constant
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1946) : error C2039: 'fog_start' : is not a member of 'refdef_t'
+        C:\cygwin\home\user\proquake_dev\WinQuake\render.h(138) : see declaration of 'refdef_t'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1947) : error C2039: 'fog_start' : is not a member of 'refdef_t'
+        C:\cygwin\home\user\proquake_dev\WinQuake\render.h(138) : see declaration of 'refdef_t'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1948) : error C2039: 'fog_start' : is not a member of 'refdef_t'
+        C:\cygwin\home\user\proquake_dev\WinQuake\render.h(138) : see declaration of 'refdef_t'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1949) : error C2039: 'fog_start' : is not a member of 'refdef_t'
+        C:\cygwin\home\user\proquake_dev\WinQuake\render.h(138) : see declaration of 'refdef_t'
+C:\cygwin\home\user\proquake_dev\WinQuake\menu.c(1949) : fatal error C1003: error count exceeds 100; stopping compilation
+movie.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+movie_avi.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+net_dgrm.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+net_loop.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+net_main.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+net_vcr.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+net_win.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+net_wins.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+net_wipx.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+pr_cmds.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+pr_edict.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\pr_edict.c(198) : error C2065: 'ENTALPHA_DEFAULT' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\pr_edict.c(571) : warning C4013: 'ENTALPHA_TOSAVE' undefined; assuming extern returning int
+C:\cygwin\home\user\proquake_dev\WinQuake\pr_edict.c(908) : warning C4013: 'ENTALPHA_ENCODE' undefined; assuming extern returning int
+pr_exec.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+qmp3.cpp
+fatal error C1083: Cannot open source file: 'C:\cygwin\home\user\proquake_dev\WinQuake\qmp3.cpp': No such file or directory
+r_part.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(32) : error C2143: syntax error : missing '{' before '*'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(34) : error C2143: syntax error : missing '{' before '*'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(59) : error C2065: 'particle_t' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(59) : error C2059: syntax error : ')'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(79) : error C2065: 'p' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(79) : warning C4552: '*' : operator has no effect; expected operator with side-effect
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(80) : error C2143: syntax error : missing ';' before 'type'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(81) : error C2275: 'vec3_t' : illegal use of this type as an expression
+        C:\cygwin\home\user\proquake_dev\WinQuake\mathlib.h(26) : see declaration of 'vec3_t'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(81) : error C2146: syntax error : missing ';' before identifier 'forward'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(81) : error C2065: 'forward' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(83) : error C2065: 'dist' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(92) : error C2065: 'angle' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(93) : error C2065: 'sy' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(94) : error C2065: 'cy' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(96) : error C2065: 'sp' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(97) : error C2065: 'cp' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(99) : error C2065: 'sr' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(100) : error C2065: 'cr' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(102) : error C2109: subscript requires array or pointer type
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(102) : error C2106: '=' : left operand must be l-value
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(103) : error C2109: subscript requires array or pointer type
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(103) : error C2106: '=' : left operand must be l-value
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(104) : error C2109: subscript requires array or pointer type
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(104) : error C2106: '=' : left operand must be l-value
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(108) : warning C4047: '=' : 'int ' differs in levels of indirection from 'int *'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(109) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(110) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(111) : warning C4047: '=' : 'int *' differs in levels of indirection from 'int '
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(113) : error C2223: left of '->die' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(114) : error C2223: left of '->color' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(115) : error C2223: left of '->type' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(115) : error C2065: 'pt_explode' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(117) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(117) : error C2109: subscript requires array or pointer type
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(118) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(118) : error C2109: subscript requires array or pointer type
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(119) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(119) : error C2109: subscript requires array or pointer type
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(137) : error C2224: left of '.next' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(138) : error C2224: left of '.next' must have struct/union type
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(147) : warning C4552: '*' : operator has no effect; expected operator with side-effect
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(148) : error C2143: syntax error : missing ';' before 'type'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(150) : error C2065: 'name' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(150) : warning C4047: 'function' : 'char *' differs in levels of indirection from 'int '
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(150) : warning C4024: '_snprintf' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(152) : warning C4047: 'function' : 'char *' differs in levels of indirection from 'int '
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(152) : warning C4024: 'COM_FOpenFile' : different types for formal and actual parameter 1
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(191) : warning C4047: '=' : 'int ' differs in levels of indirection from 'int *'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(192) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(193) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(194) : warning C4047: '=' : 'int *' differs in levels of indirection from 'int '
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(196) : error C2223: left of '->die' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(197) : error C2223: left of '->color' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(198) : error C2223: left of '->type' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(198) : error C2065: 'pt_static' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(199) : error C2223: left of '->vel' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(199) : error C2223: left of '->vel' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(199) : error C2223: left of '->vel' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(200) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(200) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(200) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(243) : warning C4552: '*' : operator has no effect; expected operator with side-effect
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(250) : warning C4047: '=' : 'int ' differs in levels of indirection from 'int *'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(251) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(252) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(253) : warning C4047: '=' : 'int *' differs in levels of indirection from 'int '
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(255) : error C2223: left of '->die' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(256) : error C2223: left of '->color' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(257) : error C2223: left of '->ramp' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(259) : error C2223: left of '->type' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(261) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(262) : error C2223: left of '->vel' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(265) : error C2223: left of '->type' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(265) : error C2065: 'pt_explode2' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(267) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(268) : error C2223: left of '->vel' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(282) : warning C4552: '*' : operator has no effect; expected operator with side-effect
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(283) : error C2143: syntax error : missing ';' before 'type'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(290) : warning C4047: '=' : 'int ' differs in levels of indirection from 'int *'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(291) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(292) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(293) : warning C4047: '=' : 'int *' differs in levels of indirection from 'int '
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(295) : error C2223: left of '->die' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(296) : error C2223: left of '->color' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(296) : error C2065: 'colorMod' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(298) : error C2223: left of '->type' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(298) : error C2065: 'pt_blob' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(302) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(303) : error C2223: left of '->vel' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(316) : warning C4552: '*' : operator has no effect; expected operator with side-effect
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(323) : warning C4047: '=' : 'int ' differs in levels of indirection from 'int *'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(324) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(325) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(326) : warning C4047: '=' : 'int *' differs in levels of indirection from 'int '
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(328) : error C2223: left of '->die' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(332) : error C2223: left of '->type' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(333) : error C2223: left of '->color' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(335) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(336) : error C2223: left of '->vel' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(341) : error C2223: left of '->type' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(341) : error C2065: 'pt_blob2' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(342) : error C2223: left of '->color' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(345) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(346) : error C2223: left of '->vel' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(360) : warning C4552: '*' : operator has no effect; expected operator with side-effect
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(367) : warning C4047: '=' : 'int ' differs in levels of indirection from 'int *'
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(368) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(369) : error C2223: left of '->next' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(370) : warning C4047: '=' : 'int *' differs in levels of indirection from 'int '
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(374) : error C2223: left of '->die' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(375) : error C2223: left of '->color' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(376) : error C2223: left of '->ramp' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(378) : error C2223: left of '->type' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(380) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(381) : error C2223: left of '->vel' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(384) : error C2223: left of '->type' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(386) : error C2223: left of '->org' must point to struct/union
+C:\cygwin\home\user\proquake_dev\WinQuake\r_part.c(386) : fatal error C1003: error count exceeds 100; stopping compilation
+registry.cpp
+security.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+snd_dma.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+snd_mem.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+snd_mix.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+snd_win.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+sv_main.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+sv_move.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+sv_phys.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+sv_user.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\sv_user.c(446) : error C2039: 'protocol' : is not a member of 'server_t'
+        C:\cygwin\home\user\proquake_dev\WinQuake\server.h(36) : see declaration of 'server_t'
+C:\cygwin\home\user\proquake_dev\WinQuake\sv_user.c(446) : error C2065: 'PROTOCOL_FITZQUAKE' : undeclared identifier
+sv_world.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+sys_win.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+version.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+vid_common_gl.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+vid_wgl.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\vid_wgl.c(574) : warning C4013: 'Key_ClearAllStates' undefined; assuming extern returning int
+C:\cygwin\home\user\proquake_dev\WinQuake\vid_wgl.c(2894) : error C2065: 'menu_state' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\vid_wgl.c(2894) : error C2065: 'm_videomodes' : undeclared identifier
+wad.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+C:\cygwin\home\user\proquake_dev\WinQuake\wad.c(180) : warning C4047: 'function' : 'int *' differs in levels of indirection from 'struct _iobuf ** '
+C:\cygwin\home\user\proquake_dev\WinQuake\wad.c(180) : warning C4024: 'COM_FOpenFile' : different types for formal and actual parameter 2
+C:\cygwin\home\user\proquake_dev\WinQuake\wad.c(182) : warning C4047: 'function' : 'int *' differs in levels of indirection from 'struct _iobuf ** '
+C:\cygwin\home\user\proquake_dev\WinQuake\wad.c(182) : warning C4024: 'COM_FOpenFile' : different types for formal and actual parameter 2
+C:\cygwin\home\user\proquake_dev\WinQuake\wad.c(184) : warning C4047: 'function' : 'int *' differs in levels of indirection from 'struct _iobuf ** '
+C:\cygwin\home\user\proquake_dev\WinQuake\wad.c(184) : warning C4024: 'COM_FOpenFile' : different types for formal and actual parameter 2
+webdownload.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+zone.c
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2061: syntax error : identifier 'cl_modelindex'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : ';'
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(379) : error C2059: syntax error : '['
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2065: 'NUM_MODELINDEX' : undeclared identifier
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2057: expected constant expression
+C:\cygwin\home\user\proquake_dev\WinQuake\client.h(380) : error C2466: cannot allocate an array of constant size 0
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+glpro466.exe - 648 error(s), 86 warning(s)
+</pre>
+</body>
+</html>
