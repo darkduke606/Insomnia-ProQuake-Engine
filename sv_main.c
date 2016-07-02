@@ -53,7 +53,9 @@ void SV_Init (void)
 #ifdef PROQUAKE_EXTENSION
 	extern  cvar_t  pq_connectmute;
 #endif
-/*	extern	cvar_t	sv_maxvelocity;
+	if(!cl.gametype == GAME_DEATHMATCH)
+	{
+	extern	cvar_t	sv_maxvelocity;
 
 	extern	cvar_t	sv_gravity;
 	extern	cvar_t	sv_nostep;
@@ -63,7 +65,8 @@ void SV_Init (void)
 	extern	cvar_t	sv_maxspeed;
 	extern	cvar_t	sv_accelerate;
 	extern	cvar_t	sv_idealpitchscale;
-	extern	cvar_t	sv_aim; */
+	extern	cvar_t	sv_aim;
+	}
 	extern	cvar_t	sv_altnoclip; //johnfitz
 
 	Cvar_RegisterVariable (&sv_maxvelocity, NULL);

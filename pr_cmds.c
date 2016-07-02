@@ -1311,8 +1311,9 @@ void PF_aim (void)
 	vec3_t	start, dir, end, bestdir;
 	int		i, j;
 	trace_t	tr;
-	float	dist, bestdist, speed;
-
+	float	dist, bestdist;
+	float	speed;
+	
 	ent = G_EDICT(OFS_PARM0);
 	speed = G_FLOAT(OFS_PARM1);
 
@@ -1329,16 +1330,12 @@ void PF_aim (void)
 		return;
 	}
 
+
 // try all possible entities
 	VectorCopy (dir, bestdir);
-#ifdef PSP_INPUT_CONTROLS // Baker: PSPs controls suck
-	if (!cl_autoaim.value)
-		bestdist = 1;
-	else
-#endif
-		bestdist = sv_aim.value;
+	bestdist = sv_aim.value;
 	bestent = NULL;
-
+	
 	check = NEXT_EDICT(sv.edicts);
 	for (i=1 ; i<sv.num_edicts ; i++, check = NEXT_EDICT(check) )
 	{
@@ -1349,12 +1346,13 @@ void PF_aim (void)
 		if (teamplay.value && ent->v.team > 0 && ent->v.team == check->v.team)
 			continue;	// don't aim at teammate
 		for (j=0 ; j<3 ; j++)
-			end[j] = check->v.origin[j] + 0.5*(check->v.mins[j] + check->v.maxs[j]);
+			end[j] = check->v.origin[j]
+			+ 0.5*(check->v.mins[j] + check->v.maxs[j]);
 		VectorSubtract (end, start, dir);
 		VectorNormalize (dir);
 		dist = DotProduct (dir, pr_global_struct->v_forward);
 		if (dist < bestdist)
-			continue;	// too far to turn
+			continue;	// to far to turn
 		tr = SV_Move (start, vec3_origin, vec3_origin, end, false, ent);
 		if (tr.ent == check)
 		{	// can shoot at this one
@@ -1362,20 +1360,21 @@ void PF_aim (void)
 			bestent = check;
 		}
 	}
-
+	
 	if (bestent)
 	{
 		VectorSubtract (bestent->v.origin, ent->v.origin, dir);
-#ifdef PSP_INPUT_CONTROLS // Baker: not sure what this is but perhaps autoaim related
-		end[0] = dir[0];
-		end[1] = dir[1];
-#else
+		if(cl_autoaim.value){
+				end[0] = dir[0];
+				end[1] = dir[1];
+				}
+		else{
 		dist = DotProduct (dir, pr_global_struct->v_forward);
 		VectorScale (pr_global_struct->v_forward, dist, end);
-#endif
+		}
 		end[2] = dir[2];
 		VectorNormalize (end);
-		VectorCopy (end, G_VECTOR(OFS_RETURN));
+		VectorCopy (end, G_VECTOR(OFS_RETURN));	
 	}
 	else
 	{
