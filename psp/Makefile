@@ -26,7 +26,7 @@ endif
 PSPLIBSDIR		= $(PSPSDK)/..
 
 # Project specific variables.
-VERSION		= 4.71 Rev1 64MB
+VERSION		= 4.71 Rev3 64MB
 SRC_DIR		= ..
 OBJ_DIR		= normal
 TARGET		= $(OBJ_DIR)/Quake
@@ -141,7 +141,6 @@ HARDWARE_VIDEO_ONLY_OBJS = \
 	$(OBJ_DIR)/pspgu/clipping.o \
 	$(OBJ_DIR)/pspgu/video_hardware.o \
 	$(OBJ_DIR)/pspgu/video_hardware_draw.o \
-	$(OBJ_DIR)/pspgu/video_hardware_fog.o \
 	$(OBJ_DIR)/pspgu/video_hardware_entity_fragment.o \
 	$(OBJ_DIR)/pspgu/video_hardware_light.o \
 	$(OBJ_DIR)/pspgu/video_hardware_main.o \

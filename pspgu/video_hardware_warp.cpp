@@ -1462,9 +1462,9 @@ void R_DrawSkyBox (void)
                 if(cl.worldmodel)
                     VID_SetPaletteToSky ();
 
-                Fog_DisableGFog();
+                //Fog_DisableGFog();
 
-                if (r_refdef.fog_end > 0.0f && r_skyfog.value)
+                if (r_skyfog.value)
                 {
                     a = r_refdef.fog_end * 0.00025f;
                     r = r_refdef.fog_red * 0.01f + (a * 0.25f);
@@ -1496,14 +1496,14 @@ void R_DrawSkyBox (void)
 //                sceGuTexWrap(GU_REPEAT, GU_REPEAT);
                 sceGuDepthRange(0, 65535);
 
-                if (r_refdef.fog_end > 0.0f && r_skyfog.value)
+                if (r_skyfog.value)
                 {
                     sceGuDisable(GU_BLEND);
                     sceGuBlendFunc(GU_ADD, GU_SRC_ALPHA, GU_ONE_MINUS_SRC_ALPHA, 0, 0);
                 }
 
                 VID_SetGlobalPalette ();
-                Fog_EnableGFog();
+                //Fog_EnableGFog();
 
             }
         }
@@ -1513,9 +1513,9 @@ void R_DrawSkyBox (void)
             if(cl.worldmodel)
                 VID_SetPaletteToSky ();
 
-            Fog_DisableGFog();
+            //Fog_DisableGFog();
 
-            if (r_refdef.fog_end > 0.0f && r_skyfog.value)
+            if (r_skyfog.value)
             {
                 a = r_refdef.fog_end * 0.00025f;
                 r = r_refdef.fog_red * 0.01f + (a * 0.25f);
@@ -1547,14 +1547,14 @@ void R_DrawSkyBox (void)
 //            sceGuTexWrap(GU_REPEAT, GU_REPEAT);
             sceGuDepthRange(0, 65535);
 
-            if (r_refdef.fog_end > 0.0f && r_skyfog.value)
+            if (r_skyfog.value)
             {
                 sceGuDisable(GU_BLEND);
                 sceGuBlendFunc(GU_ADD, GU_SRC_ALPHA, GU_ONE_MINUS_SRC_ALPHA, 0, 0);
             }
 
             VID_SetGlobalPalette ();
-            Fog_EnableGFog();
+           // Fog_EnableGFog();
         }
 	}
 }

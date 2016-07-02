@@ -141,7 +141,6 @@ HARDWARE_VIDEO_ONLY_OBJS = \
 	$(OBJ_DIR)/pspgu/clipping.o \
 	$(OBJ_DIR)/pspgu/video_hardware.o \
 	$(OBJ_DIR)/pspgu/video_hardware_draw.o \
-	$(OBJ_DIR)/pspgu/video_hardware_fog.o \
 	$(OBJ_DIR)/pspgu/video_hardware_entity_fragment.o \
 	$(OBJ_DIR)/pspgu/video_hardware_light.o \
 	$(OBJ_DIR)/pspgu/video_hardware_main.o \

@@ -807,7 +807,7 @@ void R_RenderBrushPoly (msurface_t *fa)
 		|| fa->cached_dlight)			// dynamic previously
 	{
 dynamic:
-		if (r_dynamic.value)
+		if (r_dynamic.value && cl.gametype != GAME_DEATHMATCH)
 		{
             lightmap_modified[fa->lightmaptexturenum] = qtrue;
             theRect = &lightmap_rectchange[fa->lightmaptexturenum];
@@ -871,7 +871,7 @@ void R_RenderDynamicLightmaps (msurface_t *fa)
 		|| fa->cached_dlight)			// dynamic previously
 	{
 dynamic:
-		if (r_dynamic.value)
+		if (r_dynamic.value && cl.gametype != GAME_DEATHMATCH)
 		{
             lightmap_modified[fa->lightmaptexturenum] = qtrue;
             theRect = &lightmap_rectchange[fa->lightmaptexturenum];
@@ -1080,7 +1080,6 @@ void R_DrawBrushModel (entity_t *ent)
 	}
 
 	psurf = &clmodel->surfaces[clmodel->firstmodelsurface];
-
 // calculate dynamic lighting for bmodel if it's not an instanced model
 	if (clmodel->firstmodelsurface != 0/* && !gl_flashblend.value*/)
 	{
@@ -1116,6 +1115,7 @@ void R_DrawBrushModel (entity_t *ent)
 				R_RenderBrushPoly (psurf);
 		}
 	}
+	
 
 
 	R_BlendLightmaps ();

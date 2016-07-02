@@ -367,7 +367,7 @@ void D_StartParticles (void)
 		sceGuEnable(GU_ALPHA_TEST);
 		sceGuDepthMask(GU_TRUE);
 		sceGuEnable(GU_BLEND);
-		sceGuDisable(GU_FOG);
+		//sceGuDisable(GU_FOG);
 		sceGuTexFunc(GU_TFX_MODULATE , GU_TCC_RGBA);
 
 		if (kurok)
@@ -388,7 +388,7 @@ void D_EndParticles (void)
         sceGuDisable(GU_ALPHA_TEST);
 		sceGuDepthMask(GU_FALSE);
 		sceGuDisable(GU_BLEND);
-		sceGuEnable(GU_FOG);
+		//sceGuEnable(GU_FOG);
 		sceGuTexFunc(GU_TFX_REPLACE, GU_TCC_RGB);
 		sceGuBlendFunc(GU_ADD, GU_SRC_ALPHA, GU_ONE_MINUS_SRC_ALPHA, 0, 0);
 	}

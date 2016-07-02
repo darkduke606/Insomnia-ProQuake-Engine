@@ -535,92 +535,12 @@ void Draw_Crosshair(void)
 
 	pic = 0;
 
-	if (kurok)
-	{
-		// Read the pad state.
-		SceCtrlData pad;
-		sceCtrlPeekBufferPositive(&pad, 1);
 
-		if (crosshair.value >= 2 && !chase_active.value)
-	    {
-            if (cl.stats[STAT_ACTIVEWEAPON] == KIT_AXE)                  // Knife
-				pic = Draw_CachePic ("gfx/ch_axe.lmp");
-
-	        else if (cl.stats[STAT_ACTIVEWEAPON] == KIT_TEKBOW)          // Tekbow
-				pic = Draw_CachePic ("gfx/ch_tekbo.lmp");
-
-	        else if (cl.stats[STAT_ACTIVEWEAPON] == IT_SHOTGUN)         // Pistol
-				pic = Draw_CachePic ("gfx/ch_sgun.lmp");
-
-	        else if (cl.stats[STAT_ACTIVEWEAPON] == IT_SUPER_SHOTGUN)   // Shotgun
-				pic = Draw_CachePic ("gfx/ch_ssgun.lmp");
-
-	        else if (cl.stats[STAT_ACTIVEWEAPON] == IT_NAILGUN)         // Assualt rifle
-				pic = Draw_CachePic ("gfx/ch_ngun.lmp");
-
-	        else if (cl.stats[STAT_ACTIVEWEAPON] == KIT_UZI)          // Uzi
-				pic = Draw_CachePic ("gfx/ch_uzi.lmp");
-
-	        else if (cl.stats[STAT_ACTIVEWEAPON] == KIT_M99)          // Sniper rifle
-				pic = Draw_CachePic ("gfx/ch_snip.lmp");
-
-	        else if (cl.stats[STAT_ACTIVEWEAPON] == IT_SUPER_NAILGUN)   // Minigun
-				pic = Draw_CachePic ("gfx/ch_sngun.lmp");
-
-			else if (cl.stats[STAT_ACTIVEWEAPON] == IT_GRENADE_LAUNCHER) // Grenade launcher
-				pic = Draw_CachePic ("gfx/ch_gl.lmp");
-
-			else if (cl.stats[STAT_ACTIVEWEAPON] == IT_ROCKET_LAUNCHER) // Rocket launcher
-				pic = Draw_CachePic ("gfx/ch_rl.lmp");
-
-			else if (cl.stats[STAT_ACTIVEWEAPON] == IT_LIGHTNING)       // Remote Mines
-				pic = Draw_CachePic ("gfx/ch_light.lmp");
-
-	        else
-				pic = Draw_CachePic ("gfx/ch_sgun.lmp");
-
-			double crosshair_x = (vid.width - pic->width)/2 + cl_crossx.value + ((pad.Lx - 128) * in_x_axis_adjust.value * 0.05 );
-			double crosshair_y = (vid.height - pic->height)/2 + cl_crossy.value + ((pad.Ly - 128) * in_y_axis_adjust.value * 0.05 );
-			double crosshair_y_i = (vid.height - pic->height)/2 + cl_crossy.value - ((pad.Ly - 128) * in_y_axis_adjust.value * 0.05 );
-			double crosshair_static_x = (vid.width - pic->width)/2 + cl_crossx.value;
-			double crosshair_static_y = (vid.height - pic->height)/2 + cl_crossy.value;
-
-			if (scr_fov.value == 90)
-			{
-				if (!in_disable_analog.value)
-				{
-	            	if (in_freelook_analog.value)
-	            	{
-	                	if (m_pitch.value < 0)
-	                    	Draw_Pic (int(crosshair_x), int(crosshair_y_i), pic);
-	                	else
-	                    	Draw_Pic (int(crosshair_x), int(crosshair_y), pic);
-	            	}
-	            	else
-	            	{
-	                	if (!in_analog_strafe.value)
-	                    	Draw_Pic (int(crosshair_x), int(crosshair_static_y), pic);
-	                	else
-	                    	Draw_Pic (int(crosshair_static_x), int(crosshair_static_y), pic);
-	            	}
-	        	}
-        		else
-            		Draw_Pic (int(crosshair_static_x), int(crosshair_static_y), pic);
-			}
-        	else
-            	Draw_Pic (int(crosshair_static_x), int(crosshair_static_y), pic);
-    	}
-		else if (crosshair.value && !chase_active.value)
-			Draw_Character ((vid.width - 8)/2, (vid.height - 8)/2, '.');
-	}
-	else
-	{
-		if (crosshair.value == 1 && !chase_active.value)
-//         Draw_Character (scr_vrect.x + scr_vrect.width/2 - 2, scr_vrect.y + scr_vrect.height/2 - 4, '+');
-			Draw_Character ((vid.width - 8)/2, (vid.height - 8)/2, '+');
-		else if (crosshair.value == 2 && !chase_active.value)
-			Draw_Character ((vid.width - 8)/2, (vid.height - 8)/2, '.');
-	}
+	if (crosshair.value == 1 && !chase_active.value)
+//     Draw_Character (scr_vrect.x + scr_vrect.width/2 - 2, scr_vrect.y + scr_vrect.height/2 - 4, '+');
+		Draw_Character ((vid.width - 8)/2, (vid.height - 8)/2, '+');
+	else if (crosshair.value == 2 && !chase_active.value)
+		Draw_Character ((vid.width - 8)/2, (vid.height - 8)/2, '.');
 }
 
 /*

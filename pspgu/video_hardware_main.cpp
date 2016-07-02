@@ -450,7 +450,7 @@ void R_DrawSpriteModel (entity_t *ent)
 	GL_Bind(frame->gl_texturenum);
 
 	sceGuEnable(GU_BLEND);
-	sceGuDisable(GU_FOG);
+	//sceGuDisable(GU_FOG);
 
     if (additive)
 	{
@@ -515,7 +515,7 @@ void R_DrawSpriteModel (entity_t *ent)
 
 	sceGuDepthMask(GU_FALSE);
 	sceGuDisable(GU_BLEND);
-	sceGuEnable(GU_FOG);
+	//sceGuEnable(GU_FOG);
 	sceGuTexFunc(GU_TFX_REPLACE, GU_TCC_RGBA);
 	sceGuBlendFunc(GU_ADD, GU_SRC_ALPHA, GU_ONE_MINUS_SRC_ALPHA, 0, 0);
 }
@@ -537,7 +537,7 @@ float r_avertexnormals[NUMVERTEXNORMALS][3] = {
 };
 
 vec3_t	shadevector;
-//float	shadelight, ambientlight; // LordHavoc: .lit support, removed shadelight and ambientlight
+float	shadelight, ambientlight; // LordHavoc: .lit support, removed shadelight and ambientlight
 
 // precalculated dot products for quantized angles
 #define SHADEDOT_QUANT 16
@@ -1073,7 +1073,7 @@ void R_DrawAliasModel (entity_t *ent)
 	// get lighting information
 
 	// LordHavoc: .lit support begin
-	//ambientlight = shadelight = R_LightPoint (ent->origin); // LordHavoc: original code, removed shadelight and ambientlight
+	ambientlight = shadelight = R_LightPoint (ent->origin); // LordHavoc: original code, removed shadelight and ambientlight
 	// LordHavoc: lightcolor is all that matters from this	
 	R_LightPoint(ent->origin); 
 	// LordHavoc: .lit support end
@@ -1097,7 +1097,7 @@ void R_DrawAliasModel (entity_t *ent)
 
 	for (lnum=0 ; lnum<MAX_DLIGHTS ; lnum++)
 	{
-		if (cl_dlights[lnum].die >= cl.time)
+		if (r_dynamic.value && cl.gametype != GAME_DEATHMATCH && cl_dlights[lnum].die >= cl.time) // r_dynamic.value fix for dynamic light flickering bug
 		{
 			VectorSubtract (ent->origin, cl_dlights[lnum].origin, dist);
 			add = cl_dlights[lnum].radius - VectorLength(dist);
@@ -1551,7 +1551,7 @@ R_DrawViewModel
 */
 void R_DrawViewModel (void)
 {
-	/* LordHavoc: .lit support, this code was completely useless
+	//LordHavoc: .lit support, this code was completely useless
 	float		ambient[4], diffuse[4];
 	int			j;
 	int			lnum;
@@ -1559,7 +1559,7 @@ void R_DrawViewModel (void)
 	float		add;
 	dlight_t	*dl;
 	int			ambientlight, shadelight;
-	*/
+	
 
 	if (!r_drawviewmodel.value)
 		return;
@@ -1593,7 +1593,7 @@ void R_DrawViewModel (void)
 
     // Tomaz - QC Alpha Scale End
 
-	/* LordHavoc: .lit support, this code was completely useless
+	// LordHavoc: .lit support, this code was completely useless
 	j = R_LightPoint (currententity->origin);
 
 	if (j < 24)
@@ -1618,9 +1618,8 @@ void R_DrawViewModel (void)
 			ambientlight += add;
 	}
 
-	ambient[0] = ambient[1] = ambient[2] = ambient[3] = (float)ambientlight;// / 128;
-	diffuse[0] = diffuse[1] = diffuse[2] = diffuse[3] = (float)shadelight;// / 128;
-	*/
+	ambient[0] = ambient[1] = ambient[2] = ambient[3] = (float)ambientlight / 128;
+	diffuse[0] = diffuse[1] = diffuse[2] = diffuse[3] = (float)shadelight / 128;
 
 	// hack the depth range to prevent view model from poking into walls
 	sceGuDepthRange(0, 19660);
@@ -1744,7 +1743,7 @@ R_SetupFrame
 */
 void R_SetupFrame (void)
 {
-	Fog_SetupFrame ();
+	//Fog_SetupFrame ();
 
 // don't allow cheats in multiplayer
 	if (cl.maxclients > 1)
@@ -1961,7 +1960,7 @@ void R_RenderScene (void)
         sceGuFog ( r_refdef.fog_start, r_refdef.fog_end, GU_COLOR( r_refdef.fog_red * 0.01f, r_refdef.fog_green * 0.01f, r_refdef.fog_blue * 0.01f, 1.0f ) );
 	}
 */
-	Fog_EnableGFog (); //johnfitz
+	//Fog_EnableGFog (); //johnfitz
 
 	R_DrawWorld ();		// adds static entities to the list
 
@@ -1979,7 +1978,7 @@ void R_RenderScene (void)
 
 	R_DrawViewModel ();
 
-	Fog_DisableGFog (); //johnfitz
+	//Fog_DisableGFog (); //johnfitz
 #ifdef GLTEST
 	Test_Draw ();
 #endif

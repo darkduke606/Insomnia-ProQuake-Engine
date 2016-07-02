@@ -1472,7 +1472,7 @@ void CL_ParseServerMessage (void)
 			break;
 
 		case svc_fog:
-			Fog_ParseServerMessage ();
+			//Fog_ParseServerMessage ();
 			break;
 		}
 	}

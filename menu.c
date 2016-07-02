@@ -1729,11 +1729,7 @@ enum
 {
 	OPT_SUBMENU_3 = OPT_SUBMENU,
     OPT_GAP_3,
-	OPT_FOG_START,
-	OPT_FOG_END,
-	OPT_FOG_RED,
-	OPT_FOG_GREEN,
-	OPT_FOG_BLUE,
+	OPT_AIM_ASSIST,
     OPT_GAP_3_1,
     OPT_SCRSIZE,
 	OPT_WATERTRANS,
@@ -2035,44 +2031,12 @@ void M_AdjustSliders (int dir)
     {
        	switch (options_cursor)
         {
-			case OPT_FOG_START:	// Fog start distance from viewpoint
-				r_refdef.fog_start += dir * 100;
-				if (r_refdef.fog_start < -5000)
-					r_refdef.fog_start = -5000;
-				if (r_refdef.fog_start > 5000)
-					r_refdef.fog_start = 5000;
-				break;
-
-			case OPT_FOG_END:	// Fog end distance from viewpoint
-				r_refdef.fog_end += dir * 100;
-				if (r_refdef.fog_end < -5000)
-					r_refdef.fog_end = -5000;
-				if (r_refdef.fog_end > 5000)
-					r_refdef.fog_end = 5000;
-				break;
-
-			case OPT_FOG_RED:	// Fog red
-				r_refdef.fog_red += dir * 5;
-				if (r_refdef.fog_red < 0)
-					r_refdef.fog_red = 0;
-				if (r_refdef.fog_red > 100)
-					r_refdef.fog_red = 100;
-				break;
-
-			case OPT_FOG_GREEN:	// Fog green
-				r_refdef.fog_green += dir * 5;
-				if (r_refdef.fog_green < 0)
-					r_refdef.fog_green = 0;
-				if (r_refdef.fog_green > 100)
-					r_refdef.fog_green = 100;
-				break;
-
-			case OPT_FOG_BLUE:	// Fog blue
-				r_refdef.fog_blue += dir * 5;
-				if (r_refdef.fog_blue < 0)
-					r_refdef.fog_blue = 0;
-				if (r_refdef.fog_blue > 100)
-					r_refdef.fog_blue = 100;
+			case OPT_AIM_ASSIST:	// sv_aim assist
+			Cvar_SetValueByRef (&sv_aim, sv_aim.value + dir * 0.05);
+				if (sv_aim.value > 1)
+					Cvar_SetValueByRef (&sv_aim, 0.99);
+				if (sv_aim.value < 0)
+					Cvar_SetValueByRef (&sv_aim, 0);
 				break;
 
 			case OPT_SCRSIZE:	// screen size
@@ -2244,8 +2208,15 @@ void M_Options_Draw (void)
 			M_Print (16, offset+(OPT_VSYNC*8),     "                 VSync");
 			M_DrawCheckbox (220, offset+(OPT_VSYNC*8), r_vsync.value);
 
+			if (cl.gametype == GAME_DEATHMATCH)
+			{
+			M_Print (16, offset+(OPT_DYNAMIC*8),   "Dynamic Light Disabled");
+			}
+			else
+			{
 			M_Print (16, offset+(OPT_DYNAMIC*8),   "      Dynamic Lighting");
 			M_DrawCheckbox (220, offset+(OPT_DYNAMIC*8), r_dynamic.value);
+			}
 
 			M_Print (16, offset+(OPT_MODEL_BRIGHTNESS*8),	"       Brighter Models");
 			M_DrawCheckbox (220, offset+(OPT_MODEL_BRIGHTNESS*8), r_model_brightness.value);
@@ -2296,25 +2267,9 @@ void M_Options_Draw (void)
 
         case 3:
 
-			M_Print (16, offset+(OPT_FOG_START*8),			"    Fog start distance");
-			r = (r_refdef.fog_start - (-5000)) / ((5000) - (-5000));
-			M_DrawSlider (220, offset+(OPT_FOG_START*8), r);
-
-			M_Print (16, offset+(OPT_FOG_END*8),			"      Fog end distance");
-			r = (r_refdef.fog_end - (-5000)) / ((5000) - (-5000));
-			M_DrawSlider (220, offset+(OPT_FOG_END*8), r);
-
-			M_Print (16, offset+(OPT_FOG_RED*8),			"        Fog red amount");
-			r = (r_refdef.fog_red) / 100;
-			M_DrawSlider (220, offset+(OPT_FOG_RED*8), r);
-
-			M_Print (16, offset+(OPT_FOG_GREEN*8),			"      Fog green amount");
-			r = (r_refdef.fog_green) / 100;
-			M_DrawSlider (220, offset+(OPT_FOG_GREEN*8), r);
-
-			M_Print (16, offset+(OPT_FOG_BLUE*8),			"       Fog blue amount");
-			r = (r_refdef.fog_blue) / 100;
-			M_DrawSlider (220, offset+(OPT_FOG_BLUE*8), r);
+			M_Print (16, offset+(OPT_AIM_ASSIST*8),			"   Vertical Aim Assist");
+			r = sv_aim.value;
+			M_DrawSlider (220, offset+(OPT_AIM_ASSIST*8), r);
 
 			M_Print (16, offset+(OPT_SCRSIZE*8),			"           Screen size");
 			r = (scr_viewsize.value - 30) / (130 - 30);
@@ -2339,7 +2294,7 @@ void M_Options_Draw (void)
 			M_Print (16, offset+(OPT_CROSSHAIR*8), 			"             Crosshair");
 			M_DrawCheckbox (220,offset+(OPT_CROSSHAIR*8), crosshair.value);
 			
-			M_Print (16, offset+(OPT_AUTOAIM*8), 			"               Autoaim");
+			M_Print (16, offset+(OPT_AUTOAIM*8), 			"               EasyAim");
 			M_DrawCheckbox (220,offset+(OPT_AUTOAIM*8), cl_autoaim.value);
             break;
 
@@ -4363,12 +4318,6 @@ void M_GameOptions_Draw (void)
 	else
 		M_Print (160, 96, va("%i minutes", (int)timelimit.value));
 
-	M_PrintWhite (0, 104, "        Auto Aim");
-	if (sv_aim.value == 1)
-		M_Print (160, 104, "Off");
-	else
-		M_Print (160, 104, "On");
-
 	M_PrintWhite (0, 112, "      Level Exits");
 	if (noexit.value == 1)
 		M_Print (160, 112, "Off");
@@ -4497,14 +4446,6 @@ void M_NetStart_Change (int dir)
 		break;
 
 	case 7:
-		Cvar_SetValueByRef (&sv_aim, sv_aim.value + dir * 0.01);
-		if (sv_aim.value > 1)
-			Cvar_SetValueByRef (&sv_aim, 0.99);
-		if (sv_aim.value < 0.99)
-			Cvar_SetValueByRef (&sv_aim, 1);
-		break;
-
-	case 8:
 		Cvar_SetValueByRef (&noexit, noexit.value ? 0 : 1);
 		break;
 

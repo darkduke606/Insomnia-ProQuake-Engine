@@ -1051,7 +1051,7 @@ void Host_Init (quakeparms_t *parms)
 	Con_Printf ("Exe: "__TIME__" "__DATE__"\n");
 #endif
 #ifdef PSP_SYSTEM_STATS
-	Con_Printf ("Insomnia ProQuake Engine v 4.71 Rev2\n"); //(EBOOT: "__TIME__" "__DATE__")\n");
+	Con_Printf ("Insomnia ProQuake Engine v 4.71 Rev3\n"); //(EBOOT: "__TIME__" "__DATE__")\n");
 
 	int currentCPU = scePowerGetCpuClockFrequency();
 	int currentVRAM = sceGeEdramGetSize();

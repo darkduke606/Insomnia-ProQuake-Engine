@@ -34,7 +34,7 @@ R_AnimateLight
 ==================
 */
 void R_AnimateLight (void)
-{
+{if (r_dynamic.value && cl.gametype != GAME_DEATHMATCH){ // <--- golden fix for dynamic_light bug with viewmodel/models flickering while r_dynamic "0"
 	int			i,j,k;
 
 //
@@ -53,6 +53,7 @@ void R_AnimateLight (void)
 		k = k*22;
 		d_lightstylevalue[j] = k;
 	}
+}
 }
 
 /*
@@ -537,7 +538,7 @@ int R_LightPoint (vec3_t p)
 {
 	vec3_t		end;
 
-	if (r_fullbright.value || !cl.worldmodel->lightdata)
+	if (r_dynamic.value && r_fullbright.value || !cl.worldmodel->lightdata) //fullbright dynamic_light fix
 	{
 		lightcolor[0] = lightcolor[1] = lightcolor[2] = 255;
 		return 255;

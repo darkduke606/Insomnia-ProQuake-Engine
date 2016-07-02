@@ -198,12 +198,12 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 		
 		bool done = false;
 		
-		int menu_min[4] = {0,0,0,0};
-		int menu_max[4] = {0,1,(MAX_HEAP_MB - MIN_HEAP_MB)-1,1};
-		int menu_cur[4] = {0,0,0,0};
+		int menu_min[5] = {0,0,0,0,0};
+		int menu_max[5] = {0,1,(MAX_HEAP_MB - MIN_HEAP_MB)-1,1,1};
+		int menu_cur[5] = {0,0,0,0,0};
 		
 		int menu_item_min = 0;
-		int menu_item_max = 3;
+		int menu_item_max = 4;
 		int menu_item_cur = 0;
 					
 		char temp_str[16];
@@ -215,6 +215,10 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 		char *vfilter[3];
 		vfilter[0] = strdup("OFF");
 		vfilter[1] = strdup("ON");
+		
+		char *hipnotic[2];
+		hipnotic[0] = strdup("OFF");
+		hipnotic[1] = strdup("ON");
 		
 		char *heaps[MAX_HEAP_MB - MIN_HEAP_MB];
 		for (int i = 0 ;i < MAX_HEAP_MB - MIN_HEAP_MB; i++) {
@@ -303,7 +307,7 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 			
 			pspDebugScreenSetTextColor(0xffffff);
 			
-			printf("Insomnia ProQuake 4.71 Revision 2\n");
+			printf("Insomnia ProQuake 4.71 Revision 3\n");
 			printf("---------------- \n");
 			printf("Command line file : %s \n", cmdlinePath);
 			printf("Startup directory : %s \n", currentDirectory);
@@ -333,6 +337,11 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 			if (menu_item_cur == 3) 
 				pspDebugScreenSetTextColor(0x00ff00);
 			printf("Texture Filtering : [%d/%d] '%s' \t \n", 1+menu_cur[3], 1+menu_max[3], vfilter[menu_cur[3]]);
+			pspDebugScreenSetTextColor(0x00ffff);
+			
+			if (menu_item_cur == 4) 
+				pspDebugScreenSetTextColor(0x00ff00);
+			printf("Hipnotic Mode     : [%d/%d] '%s' \t \n", 1+menu_cur[4], 1+menu_max[4], hipnotic[menu_cur[4]]);
 			pspDebugScreenSetTextColor(0xffffff);
 			
 			if (pad.Buttons != 0) {
@@ -454,6 +463,17 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 				f_argc += 1;
 			}
 		}
+		if (stricmp(hipnotic[menu_cur[4]],"ON") == 0) {
+		
+			if (!CheckParm(args, f_argc, "-hinotic")) {
+				int len1 = strlen("-hipnotic");
+				
+				args[f_argc] = new char[len1+1];
+				strcpy(args[f_argc], "-hipnotic");
+				
+				f_argc += 1;
+			}
+		}
 			
 		// get rid of temp. alloc memory
 		for (int i = 0 ;i < MAX_HEAP_MB - MIN_HEAP_MB; i++) {
@@ -466,6 +486,8 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 		free(cpus[1]);
 		free(vfilter[0]);
 		free(vfilter[1]);
+		free(hipnotic[0]);
+		free(hipnotic[1]);
 		pspDebugScreenClear(); 
 	}
 }
@@ -543,6 +565,10 @@ int user_main(SceSize argc, void* argp)
 		
 	if (CheckParm(args, f_argc, "-nearest")) {
 		char* tempStr = args[CheckParm(args, f_argc,"-nearest")+1];
+	}
+	
+	if (CheckParm(args, f_argc, "-hipnotic")) {
+	char* tempStr = args[CheckParm(args, f_argc,"-hipnotic")+1];
 	}
 		
 	if (CheckParm(args, f_argc, "-heap")) {
