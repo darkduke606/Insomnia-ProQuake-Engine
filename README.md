@@ -45,6 +45,21 @@ If you wish to compile the source yourself, I recommend using CYGWIN as well as 
 Please feel free to reach out to me if you would like a precompiled environment with the required version of the psptoolchain
 
 =====================CHANGELOG===================
+July 1, 2016  - Revision 3
+-------------
+
+Force disabled dynamic lighting in deathmatch mode
+Fixed Dynamic Lighting bugs relating to viewmodels/enemy models illuminating when dynamic lights disabled
+
+Added "Hipnotic" support for mods that require -hipnotic to the prompt menu -- you must have Scourge of Armagon
+
+Added Vertical Aiming slider to MISC OPTIONS
+
+Added more mods
+
+Removed expiremental fog support
+Renamed Autoaim to "EasyAim"
+
 June 25, 2016 - Revision 2
 -------------
 
