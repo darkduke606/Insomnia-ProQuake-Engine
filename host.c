@@ -386,7 +386,7 @@ void Host_WriteConfiguration (void)
 // config.cfg cvars
 	if (host_initialized & !isDedicated)
 	{
-		f = fopen (va("%s/config.cfg",com_gamedir), "w");
+		f = fopen (va("%s/id1/config.cfg",host_parms.basedir), "w");
 		if (!f)
 		{
 			Con_Printf ("Couldn't write config.cfg.\n");
@@ -1051,7 +1051,7 @@ void Host_Init (quakeparms_t *parms)
 	Con_Printf ("Exe: "__TIME__" "__DATE__"\n");
 #endif
 #ifdef PSP_SYSTEM_STATS
-	Con_Printf ("Insomnia ProQuake Engine v 4.71 Rev3\n"); //(EBOOT: "__TIME__" "__DATE__")\n");
+	Con_Printf ("Insomnia ProQuake Engine v 4.71 Rev4\n"); //(EBOOT: "__TIME__" "__DATE__")\n");
 
 	int currentCPU = scePowerGetCpuClockFrequency();
 	int currentVRAM = sceGeEdramGetSize();

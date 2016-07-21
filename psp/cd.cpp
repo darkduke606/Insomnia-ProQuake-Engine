@@ -173,7 +173,13 @@ void CDAudio_Play(byte track, qboolean looping)
         track = 1;
 
 	char path[256];
+	if (COM_CheckParm("-modmusic")){
+	snprintf(path, sizeof(path), "%s/music/track%02u.mp3", com_gamedir, track);
+	}
+	else {
 	snprintf(path, sizeof(path), "%s/%s/music/track%02u.mp3", host_parms.basedir, kurok ? "kurok" : "id1", track);
+	}
+	
 
 /*	if (!strcmp(,"id1")
 

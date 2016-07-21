@@ -1177,6 +1177,14 @@ void Sbar_Draw (void)
 	scr_copyeverything = 1;
 
 	sb_updates++;
+	if (scr_viewsize.value > 115){ //duke edition at request of grzybiars
+		if (!hipnotic && cl.items & IT_KEY1){
+			Sbar_DrawPic (-12, 0, sb_items[0]);
+			}
+		if (!kurok && !rogue && !hipnotic && cl.items & IT_KEY2){
+			Sbar_DrawPic (-12, 8, sb_items[1]);
+			}
+	}
 
 	if (cl_sbar.value >=1.0 || scr_viewsize.value < 100.0)
 	{

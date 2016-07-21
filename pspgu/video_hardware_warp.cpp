@@ -1390,7 +1390,6 @@ void R_DrawSkyBox (void)
 {
     int		i;
     float   r,g,b,a;
-
 	for (i=0 ; i<6 ; i++)
 	{
 		// Allocate memory for this polygon.
@@ -1462,7 +1461,7 @@ void R_DrawSkyBox (void)
                 if(cl.worldmodel)
                     VID_SetPaletteToSky ();
 
-                //Fog_DisableGFog();
+                Fog_DisableGFog();
 
                 if (r_skyfog.value)
                 {
@@ -1503,7 +1502,7 @@ void R_DrawSkyBox (void)
                 }
 
                 VID_SetGlobalPalette ();
-                //Fog_EnableGFog();
+                Fog_EnableGFog();
 
             }
         }
@@ -1513,7 +1512,7 @@ void R_DrawSkyBox (void)
             if(cl.worldmodel)
                 VID_SetPaletteToSky ();
 
-            //Fog_DisableGFog();
+            Fog_DisableGFog();
 
             if (r_skyfog.value)
             {
@@ -1554,7 +1553,7 @@ void R_DrawSkyBox (void)
             }
 
             VID_SetGlobalPalette ();
-           // Fog_EnableGFog();
+			Fog_EnableGFog();
         }
 	}
 }
@@ -1572,7 +1571,6 @@ void R_DrawSkyChain (msurface_t *s)
     int		i;
     vec3_t	verts[MAX_CLIP_VERTS];
     glpoly_t	*p;
-
     if (skybox_name[0]) // if the skybox has a name, draw the skybox
 	{
         c_sky = 0;
@@ -1627,6 +1625,7 @@ void R_DrawSkyChain (msurface_t *s)
 //        sceGuTexFunc(GU_TFX_REPLACE, GU_TCC_RGBA);
 	}
 }
+
 
 
 //===============================================================

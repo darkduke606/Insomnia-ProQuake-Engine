@@ -114,6 +114,7 @@ cvar_t  r_antialias = {"r_antialias","0", qtrue};               // Toggle fake a
 cvar_t  r_menufade = {"r_menufade","0.5", qtrue}; 				// Adjust menu background alpha
 cvar_t  r_showtris = {"r_showtris","0", qfalse}; 					// Display wireframes
 cvar_t  r_test = {"r_test","0", qfalse}; 						// developer temp test cvar
+cvar_t  r_skybox = {"r_skybox", "1", qtrue}; // set the skybox to on, and save the value in the config file (true)
 
 cvar_t  r_interpolate_animation = { "r_interpolate_animation", "1", qtrue}; // Toggle smooth model animation
 cvar_t  r_interpolate_transform = { "r_interpolate_transform", "1", qtrue}; // Toggle smooth model movement

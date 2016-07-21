@@ -49,6 +49,7 @@ extern cvar_t   r_i_model_animation;
 extern cvar_t   t_i_model_transform;
 extern cvar_t	pq_drawfps;
 extern cvar_t   sv_aim;
+extern cvar_t   alias_sv_aim;
 extern cvar_t   noexit;
 
 ////////////////////////////////////////////////////////////////////
@@ -344,9 +345,9 @@ void M_DrawCheckboxReverse (int x, int y, int on)
 		M_DrawCharacter (x, y, 129);
 #endif
 	if (on)
-		M_Print (x, y, "off");
-	else
 		M_Print (x, y, "on");
+	else
+		M_Print (x, y, "off");
 }
 
 //=============================================================================
@@ -2090,19 +2091,29 @@ void M_AdjustSliders (int dir)
 				Cvar_SetValueByRef (&crosshair, !crosshair.value);
 				break;
 			case OPT_AIM_ASSIST:	// sv_aim assist
-				sv_aim.value += dir * 0.1;
-				if (sv_aim.value < 0.99)
-					sv_aim.value = .8;
-				if (sv_aim.value > 1)
+				if (cl_autoaim.value == 1){
+					alias_sv_aim.value = 1;
+					sv_aim.value = .93;
+				Cvar_SetValueByRef (&sv_aim, sv_aim.value);
+				Cvar_SetValueByRef (&alias_sv_aim, alias_sv_aim.value);
+				}
+				if (alias_sv_aim.value == 1){
+					sv_aim.value = .93;
+				}
+				if (alias_sv_aim.value == 0){
 					sv_aim.value = 1;
+				}
+				Cvar_SetValueByRef (&alias_sv_aim, !alias_sv_aim.value);
 				Cvar_SetValueByRef (&sv_aim, sv_aim.value);
 				break;
 			case OPT_AUTOAIM:
 				Cvar_SetValueByRef (&cl_autoaim, !cl_autoaim.value);
-					if (cl_autoaim.value){
-					sv_aim.value = .8;
-					Cvar_SetValueByRef (&sv_aim, sv_aim.value);
-					}
+				if (cl_autoaim.value == 1){
+					alias_sv_aim.value = 1;
+					sv_aim.value = .93;
+				Cvar_SetValueByRef (&sv_aim, sv_aim.value);
+				Cvar_SetValueByRef (&alias_sv_aim, alias_sv_aim.value);
+				}
 				break;
 				
 			/*
@@ -2320,8 +2331,7 @@ void M_Options_Draw (void)
 			M_DrawCheckbox (220,offset+(OPT_CROSSHAIR*8), crosshair.value);
 			
 			M_Print (16, offset+(OPT_AIM_ASSIST*8),			"   Vertical Aim Assist");
-			r = sv_aim.value;
-			M_DrawCheckboxReverse  (220, offset+(OPT_AIM_ASSIST*8), r);
+			M_DrawCheckboxReverse  (220, offset+(OPT_AIM_ASSIST*8), alias_sv_aim.value);
 			
 			M_Print (16, offset+(OPT_AUTOAIM*8), 	    "               EasyAim");
 			M_DrawCheckbox (230,offset+(OPT_AUTOAIM*8), cl_autoaim.value);

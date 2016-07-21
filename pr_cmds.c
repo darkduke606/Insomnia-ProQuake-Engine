@@ -1303,10 +1303,17 @@ Pick a vector for the player to shoot along
 vector aim(entity, missilespeed)
 =============
 */
-
-cvar_t	sv_aim = {"sv_aim", "0.93"}; // kurokdef: 0.99
+cvar_t  sv_aim = {"sv_aim", ".93"};
 void PF_aim (void)
 {
+/*
+	if (alias_sv_aim.value == 1){
+		sv_aim.value = 0.93;
+	}
+	if (alias_sv_aim.value == 0){
+		sv_aim.value = 1;
+	}
+*/
 	edict_t	*ent, *check, *bestent;
 	vec3_t	start, dir, end, bestdir;
 	int		i, j;

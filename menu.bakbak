@@ -2092,7 +2092,7 @@ void M_AdjustSliders (int dir)
 			case OPT_AIM_ASSIST:	// sv_aim assist
 				sv_aim.value += dir * 0.1;
 				if (sv_aim.value < 0.99)
-					sv_aim.value = .8;
+					sv_aim.value = .93;
 				if (sv_aim.value > 1)
 					sv_aim.value = 1;
 				Cvar_SetValueByRef (&sv_aim, sv_aim.value);
@@ -2100,8 +2100,7 @@ void M_AdjustSliders (int dir)
 			case OPT_AUTOAIM:
 				Cvar_SetValueByRef (&cl_autoaim, !cl_autoaim.value);
 					if (cl_autoaim.value){
-					sv_aim.value = .8;
-					Cvar_SetValueByRef (&sv_aim, sv_aim.value);
+					sv_aim.value = .93;
 					}
 				break;
 				

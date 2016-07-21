@@ -51,12 +51,12 @@ cvar_t	v_gunkick = {"v_gunkick", "0", true};
 cvar_t	cl_rollangle = {"cl_rollangle", "3.0"}; // Quake classic default = 2.0
 
 cvar_t	cl_bob = {"cl_bob","0.02", true}; // Quake classic default = 0.02
-cvar_t	cl_bobcycle = {"cl_bobcycle","0.45", true};  // Leave it
+cvar_t	cl_bobcycle = {"cl_bobcycle","0.6", true};  // Leave it
 cvar_t	cl_bobup = {"cl_bobup","0.5", true}; // Quake classic default is 0.5
 
 #ifdef SUPPORTS_KUROK
-cvar_t	cl_bobside = {"cl_bobside", "0" /* "0.02" */, true};
-cvar_t	cl_bobsidecycle = {"cl_bobsidecycle","0.9", true};
+cvar_t	cl_bobside = {"cl_bobside", "0.02" /* "0.02" */, true};
+cvar_t	cl_bobsidecycle = {"cl_bobsidecycle","0.6", true};
 cvar_t	cl_bobsideup = {"cl_bobsideup","0.5", true};
 #endif
 

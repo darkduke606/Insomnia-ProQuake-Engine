@@ -329,6 +329,7 @@ static void Cmd_StuffCmds_f (void)
 	Z_Free (build);
 }
 
+
 /*
 ===============
 Cmd_Exec_f
@@ -384,9 +385,8 @@ static void Cmd_Exec_f (void)
 	Cbuf_InsertText (f);
 	Hunk_FreeToLowMark (mark);
 }
-
-
 /*
+("%s/%s", host_parms.basedir, Cmd_Argv(1)));
 ===============
 Cmd_Echo_f
 

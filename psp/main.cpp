@@ -198,12 +198,12 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 		
 		bool done = false;
 		
-		int menu_min[5] = {0,0,0,0,0};
-		int menu_max[5] = {0,1,(MAX_HEAP_MB - MIN_HEAP_MB)-1,1,1};
-		int menu_cur[5] = {0,0,0,0,0};
+		int menu_min[7] = {0,0,0,0,0,0,0};
+		int menu_max[7] = {0,1,(MAX_HEAP_MB - MIN_HEAP_MB)-1,1,1,1,1};
+		int menu_cur[7] = {0,0,0,0,0,0,0};
 		
 		int menu_item_min = 0;
-		int menu_item_max = 4;
+		int menu_item_max = 6;
 		int menu_item_cur = 0;
 					
 		char temp_str[16];
@@ -212,13 +212,21 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 		cpus[0] = strdup("222");
 		cpus[1] = strdup("333");
 		
-		char *vfilter[3];
+		char *vfilter[2];
 		vfilter[0] = strdup("OFF");
 		vfilter[1] = strdup("ON");
 		
 		char *hipnotic[2];
 		hipnotic[0] = strdup("OFF");
 		hipnotic[1] = strdup("ON");
+		
+		char *rogue[2];
+		rogue[0] = strdup("OFF");
+		rogue[1] = strdup("ON");
+		
+		char *modmusic[2];
+		modmusic[0] = strdup("OFF");
+		modmusic[1] = strdup("ON");
 		
 		char *heaps[MAX_HEAP_MB - MIN_HEAP_MB];
 		for (int i = 0 ;i < MAX_HEAP_MB - MIN_HEAP_MB; i++) {
@@ -254,6 +262,15 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 		
 		if (CheckParm(args, f_argc, "-cpu333"))
 			menu_cur[1] = 1;
+			
+		if (CheckParm(args, f_argc, "-linear"))
+			menu_cur[3] = 1;
+			
+		if (CheckParm(args, f_argc, "-hipnotic"))
+			menu_cur[4] = 1;
+			
+		if (CheckParm(args, f_argc, "-setmodmusic"))
+			menu_cur[6] = 1;
 		
 		if (CheckParm(args, f_argc, "-heap")) {
 			int idx = CheckParm(args, f_argc, "-heap");
@@ -307,7 +324,7 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 			
 			pspDebugScreenSetTextColor(0xffffff);
 			
-			printf("Insomnia ProQuake 4.71 Revision 3\n");
+			printf("Insomnia ProQuake 4.71 Revision 4\n");
 			printf("---------------- \n");
 			printf("Command line file : %s \n", cmdlinePath);
 			printf("Startup directory : %s \n", currentDirectory);
@@ -317,6 +334,11 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 			printf("\n");
 			
 			pspDebugScreenSetTextColor(0x00ffff);
+			
+			if (menu_cur[4] == 1)
+				menu_cur[5] = 0;
+			if (menu_cur[5] == 1)
+				menu_cur[4] = 0;
 			
 			if (j > -1) {
 				if (menu_item_cur == 0) 
@@ -342,6 +364,16 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 			if (menu_item_cur == 4) 
 				pspDebugScreenSetTextColor(0x00ff00);
 			printf("Hipnotic Mode     : [%d/%d] '%s' \t \n", 1+menu_cur[4], 1+menu_max[4], hipnotic[menu_cur[4]]);
+			pspDebugScreenSetTextColor(0x00ffff);
+			
+			if (menu_item_cur == 5) 
+				pspDebugScreenSetTextColor(0x00ff00);
+			printf("Rogue Mode        : [%d/%d] '%s' \t \n", 1+menu_cur[5], 1+menu_max[5], modmusic[menu_cur[5]]);
+			pspDebugScreenSetTextColor(0x00ffff);
+			
+			if (menu_item_cur == 6) 
+				pspDebugScreenSetTextColor(0x00ff00);
+			printf("Mod Music         : [%d/%d] '%s' \t \n", 1+menu_cur[6], 1+menu_max[6], modmusic[menu_cur[6]]);
 			pspDebugScreenSetTextColor(0xffffff);
 			
 			if (pad.Buttons != 0) {
@@ -441,9 +473,9 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 			f_argc += 2;
 		}
 		
-		if (stricmp(vfilter[menu_cur[3]],"ON") == 0) {
 		
-			if (!CheckParm(args, f_argc, "-nearest")) {
+		if (stricmp(vfilter[menu_cur[3]],"ON") == 0) {
+			if (!CheckParm(args, f_argc, "-linear")) {
 				int len1 = strlen("-linear");
 				
 				args[f_argc] = new char[len1+1];
@@ -452,17 +484,16 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 				f_argc += 1;
 			}
 		}
-		if (stricmp(vfilter[menu_cur[3]],"OFF") == 0) {
-		
-			if (!CheckParm(args, f_argc, "-linear")) {
+		if (stricmp(vfilter[menu_cur[3]],"OFF") == 0){
 				int len1 = strlen("-nearest");
 				
 				args[f_argc] = new char[len1+1];
 				strcpy(args[f_argc], "-nearest");
 				
 				f_argc += 1;
-			}
-		}
+				}
+			
+		
 		if (stricmp(hipnotic[menu_cur[4]],"ON") == 0) {
 		
 			if (!CheckParm(args, f_argc, "-hinotic")) {
@@ -474,6 +505,32 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 				f_argc += 1;
 			}
 		}
+		
+		if (stricmp(hipnotic[menu_cur[5]],"ON") == 0) {
+		
+			if (!CheckParm(args, f_argc, "-rogue")) {
+				int len1 = strlen("-rogue");
+				
+				args[f_argc] = new char[len1+1];
+				strcpy(args[f_argc], "-rogue");
+				
+				f_argc += 1;
+			}
+		}
+		
+		
+		if (stricmp(modmusic[menu_cur[6]],"ON") == 0) {
+		
+			if (!CheckParm(args, f_argc, "-modmusic")) {
+				int len1 = strlen("-modmusic");
+				
+				args[f_argc] = new char[len1+1];
+				strcpy(args[f_argc], "-modmusic");
+				
+				f_argc += 1;
+			}
+		}
+		
 			
 		// get rid of temp. alloc memory
 		for (int i = 0 ;i < MAX_HEAP_MB - MIN_HEAP_MB; i++) {
@@ -488,6 +545,10 @@ void StartUpParams(char **args, int argc, char *cmdlinePath, char *currentDirect
 		free(vfilter[1]);
 		free(hipnotic[0]);
 		free(hipnotic[1]);
+		free(modmusic[0]);
+		free(modmusic[1]);
+		free(rogue[0]);
+		free(rogue[1]);
 		pspDebugScreenClear(); 
 	}
 }
@@ -516,7 +577,7 @@ int user_main(SceSize argc, void* argp)
 	// Set up the callback thread, this is not appropriate for use with
 	// the loader, so don't bother calling it as it apparently seems to
 	// cause problems with firmware 2.0+
-	setUpCallbackThread();
+	//setUpCallbackThread(); //<-- dark_duke removal 7/6/2016
 
 
 	// Disable floating point exceptions.
@@ -558,6 +619,7 @@ int user_main(SceSize argc, void* argp)
 
 	/////
 	StartUpParams(args, f_argc, path_f, currentDirectory, gameDirectory);
+	setUpCallbackThread();
 	
 	if (CheckParm(args, f_argc, "-linear")) {
 		char* tempStr = args[CheckParm(args, f_argc,"-linear")+1];
@@ -569,6 +631,14 @@ int user_main(SceSize argc, void* argp)
 	
 	if (CheckParm(args, f_argc, "-hipnotic")) {
 	char* tempStr = args[CheckParm(args, f_argc,"-hipnotic")+1];
+	}
+	
+	if (CheckParm(args, f_argc, "-rogue")) {
+	char* tempStr = args[CheckParm(args, f_argc,"-rogue")+1];
+	}
+	
+	if (CheckParm(args, f_argc, "-modmusic")) {
+	char* tempStr = args[CheckParm(args, f_argc,"-modmusic")+1];
 	}
 		
 	if (CheckParm(args, f_argc, "-heap")) {

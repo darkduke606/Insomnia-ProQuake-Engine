@@ -250,6 +250,7 @@ void R_Init (void)
     Cvar_RegisterVariable (&r_interpolate_transform, NULL);
     Cvar_RegisterVariable (&r_model_contrast, NULL);
     Cvar_RegisterVariable (&r_model_brightness, NULL);
+	Cvar_RegisterVariable (&r_skybox, NULL);
 
 	Cvar_RegisterVariable (&gl_keeptjunctions, NULL);
 

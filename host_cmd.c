@@ -663,7 +663,13 @@ LOAD / SAVE GAME
 ===============================================================================
 */
 
-#define	SAVEGAME_VERSION	5
+// mankrip - serverflags bugfix - begin
+#define   VANILLA_SAVESTATE_VERSION   5
+#define   SAVESTATE_VERSION   6 // only used for full saves
+#define   SAVEGAME_VERSION   5 // only used for small saves
+
+cvar_t		savegame_compatibility = {"savegame_compatibility", "0", true};
+// mankrip - serverflags bugfix - end
 
 /*
 ===============
@@ -759,7 +765,9 @@ void Host_Savegame_f (void)
 		return;
 	}
 
-	fprintf (f, "%i\n", SAVEGAME_VERSION);
+	//fprintf (f, "%i\n", SAVEGAME_VERSION);
+	//Host_SavegameComment (comment);
+	fprintf (f, "%i\n", savegame_compatibility.value ? VANILLA_SAVESTATE_VERSION : SAVESTATE_VERSION); // mankrip - serverflags bugfix
 	Host_SavegameComment (comment);
 	fprintf (f, "%s\n", comment);
 	for (i=0 ; i<NUM_SPAWN_PARMS ; i++)
@@ -767,6 +775,9 @@ void Host_Savegame_f (void)
 	fprintf (f, "%d\n", current_skill);
 	fprintf (f, "%s\n", sv.name);
 	fprintf (f, "%f\n",sv.time);
+	
+	if (!savegame_compatibility.value) // mankrip - serverflags bugfix
+    fprintf (f, "%i\n", svs.serverflags); // mankrip - serverflags bugfix
 
 // write the light styles
 
@@ -839,6 +850,7 @@ void Host_Loadgame_f (void)
 		return;
 	}
 
+	/*
 	fscanf (f, "%i\n", &version);
 	if (version != SAVEGAME_VERSION)
 	{
@@ -847,6 +859,15 @@ void Host_Loadgame_f (void)
 
 		return;
 	}
+	*/
+	
+	 fscanf (f, "%i\n", &version);
+		if (version != SAVESTATE_VERSION && version != VANILLA_SAVESTATE_VERSION) // mankrip - serverflags bugfix
+		{
+		fclose (f);
+		Con_Printf ("Savegame is version %i, not %i or %i\n", version, VANILLA_SAVESTATE_VERSION, SAVESTATE_VERSION); // mankrip - serverflags bugfix - edited
+		return;
+		}
 
 	fscanf (f, "%s\n", str);
 	for (i=0 ; i<NUM_SPAWN_PARMS ; i++)
@@ -860,7 +881,15 @@ void Host_Loadgame_f (void)
 	fscanf (f, "%s\n",mapname);
 	fscanf (f, "%f\n",&time);
 
+   if (version != VANILLA_SAVESTATE_VERSION) // mankrip - serverflags bugfix
+   fscanf (f, "%i\n", &svs.serverflags); // mankrip - serverflags bugfix
+
+   CL_Disconnect_f ();
+	/*
+	fscanf (f, "%f\n",&time);
+
 	CL_Disconnect_f ();
+	*/
 
 	SV_SpawnServer (mapname);
 
@@ -2319,6 +2348,7 @@ void Host_InitCommands (void)
 	Cmd_AddCommand ("ipmerge", IPLog_Import_f);		// JPG 3.00 - import an IP data file
 #endif
 	Cvar_RegisterVariable (&cl_confirmquit, NULL); // Baker 3.60
+	Cvar_RegisterVariable (&savegame_compatibility, NULL); // mankrip - serverflags bugfix
 
 	Cvar_RegisterVariable (&host_mapname, NULL);	// Baker: 5.51 -- really this needs to be registered elsewhere ... sv cannot see this cvar.   Maybe make it "host_mapname?"
 }

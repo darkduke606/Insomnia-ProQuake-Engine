@@ -190,6 +190,7 @@ extern  cvar_t  r_menufade;
 extern  cvar_t  r_skyfog;
 extern  cvar_t	r_showtris;
 extern  cvar_t	r_test;
+extern  cvar_t	r_skybox;
 
 extern  cvar_t  vlight;   // RIOT - Vertex lighting
 extern  cvar_t	vlight_pitch;
