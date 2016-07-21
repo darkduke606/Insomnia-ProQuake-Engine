@@ -44,7 +44,9 @@ Refer to included "Insomnia Proquake_471_readme.txt" for more information
 If you wish to compile the source yourself, I recommend using CYGWIN as well as this mirror of an older iteration of the psptoolchain ttp://psp.jim.sh/svn/psp/trunk/psptoolchain/]psptoolchain - Revision 2494
 Please feel free to reach out to me if you would like a precompiled environment with the required version of the psptoolchain
 
-=====================CHANGELOG===================July 1, 2016 - Revision 4
+=====================CHANGELOG===================
+
+July 1, 2016 - Revision 4
 ---------------
 Added modmusic support
 Will load any mp3s labeled track02 or above that is in the modfolders respective path \<modfolder>\music\
