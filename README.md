@@ -1,6 +1,6 @@
 # PSP_Insomnia_ProQuake_Engine
 
-Insomnia Proquake 4.71 Revision 2
+Insomnia Proquake 4.71 Revision 4
 
 =====INTRODUCTION=====
  
@@ -10,7 +10,7 @@ With the support of WorldGenesis[/r/psp], Baker, and MDave, I am happy to releas
  
 ======FEATURES======
  
-This version of the engine is optimized for PSP Slim's 64mb of ram. It also features seven, vanilla Quake user created campaigns.
+This version of the engine is optimized for PSP Slim's 64mb of ram. Also now includes a 32mb PHAT compatible eboot.
  
 Added functionality with "-prompt" menu.
  
@@ -19,7 +19,7 @@ When the "-prompt" command line argument is added to the quake.cmdline file (don
 Added texture filtering options for ProQuake Engine via prompt menu
  
 Other options include ability to set cpu speed and heapsize for memory allocation.
-I recommend using CPU Speed: 333 and Heapsize: 38 for the PSP Slim, and for the PS Vita/PSP Phat to use CPU Speed: 333 and Heapsize: 16
+I recommend using CPU Speed: 333 and Heapsize: 38 for the PSP Slim, and for the PS Vita/PSP Phat to use CPU Speed: 333 and Heapsize: 14
 
 ======INSTALLATION======
  
@@ -44,8 +44,7 @@ Refer to included "Insomnia Proquake_471_readme.txt" for more information
 If you wish to compile the source yourself, I recommend using CYGWIN as well as this mirror of an older iteration of the psptoolchain ttp://psp.jim.sh/svn/psp/trunk/psptoolchain/]psptoolchain - Revision 2494
 Please feel free to reach out to me if you would like a precompiled environment with the required version of the psptoolchain
 
-=====================CHANGELOG===================
-July 1, 2016 - Revision 4
+=====================CHANGELOG===================July 1, 2016 - Revision 4
 ---------------
 Added modmusic support
 Will load any mp3s labeled track02 or above that is in the modfolders respective path \<modfolder>\music\
@@ -66,27 +65,33 @@ More than likely fixed the disappearing rune bug regarding saves -- not confirme
 
 Compiled a 32mb version for PSP 1000 models
 
-July 1, 2016  - Revision 3
+July 1, 2016 - Revision 3
 -------------
 
 Force disabled dynamic lighting in deathmatch mode
-Fixed Dynamic Lighting bugs relating to viewmodels/enemy models illuminating when dynamic lights disabled
 
-Added "Hipnotic" support for mods that require -hipnotic to the prompt menu -- you must have Scourge of Armagon
+Fixed Dynamic Lighting bugs relating to viewmodels/enemy models
+illuminating when dynamic lights disabled
+
+Added "Hipnotic" support for mods that require -hipnotic to the prompt menu 
+ -- you must have Scourge of Armagon
 
 Added Vertical Aiming slider to MISC OPTIONS
 
 Added more mods
 
 Removed expiremental fog support
+
 Renamed Autoaim to "EasyAim"
 
 June 25, 2016 - Revision 2
 -------------
 
-Added "Texture Filtering" to prompt menu. 
+Added "Texture Filtering" to prompt. 
 Equivalent of "gl_texturemode GL_LINEAR"(Texture Filtering On) and
 "gl_texturemode GL_NEAREST"(Texture Filtering Off)
+The difference is texture smoothing vs "pixelated" textures. 
+ I prefer the raw, pixelated textures as intended.
 
 Bot Options under Multiplayer tab are now linked for FROGBOT
 Bot Options will autohide when not in FROGBOT
