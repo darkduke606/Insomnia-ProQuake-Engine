@@ -45,6 +45,27 @@ If you wish to compile the source yourself, I recommend using CYGWIN as well as 
 Please feel free to reach out to me if you would like a precompiled environment with the required version of the psptoolchain
 
 =====================CHANGELOG===================
+July 1, 2016 - Revision 4
+---------------
+Added modmusic support
+Will load any mp3s labeled track02 or above that is in the modfolders respective path \<modfolder>\music\
+
+Set bobcycles to engine defaults
+
+Added ability to set "defaults" to the prompt menu.
+
+Example, add -setmodmusic or -linear to your quake.cmdline to select Texture Filtering to On and Mod Music to On in the prompt menu by             default. Applies to memory allocation with "-heap 33" or "-cpu 333"
+
+When sv_aim is enabled, defaults to .8
+
+Added keys to smallest visible HUD
+
+Added "Rogue" mode for Dissolution of Eternity -- you must have Dissolution of Eternity
+
+More than likely fixed the disappearing rune bug regarding saves -- not confirmed
+
+Compiled a 32mb version for PSP 1000 models
+
 July 1, 2016  - Revision 3
 -------------
 
