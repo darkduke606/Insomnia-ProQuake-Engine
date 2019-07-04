@@ -53,6 +53,22 @@ int totalAccessPoints = 0;
 cvar_t accesspoint = {"accesspoint", "1", qtrue};
 int accessPointNumber[100];
 
+// Missing PSP SDK functions -Iron
+static __inline__ unsigned int sceAllegrexWsbw(unsigned int x) {
+    return (((x & 0xFF)<<24) | ((x & 0xFF00)<<8) | ((x>>8) & 0xFF00) | ((x>>24) & 0xFF));
+}
+
+static __inline__ unsigned int sceAllegrexWsbh(unsigned int x) {
+    return (((x<<8) & 0xFF00FF00) | ((x>>8) & 0x00FF00FF));
+}
+
+static inline u32 htonl(u32 hostlong) {
+    return sceAllegrexWsbw(hostlong);
+}
+
+static inline u16 htons(u16 hostshort) {
+    return sceAllegrexWsbh(hostshort);
+}
 
 typedef struct sockaddr_adhoc
 {
